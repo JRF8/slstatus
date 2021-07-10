@@ -67,7 +67,9 @@ static const struct arg args[] = {
 	/* function format          argument */
 	{ username, "User: %s",	      "NULL"},
 	{ separator," | ",            "NULL"},
-	{ ram_used, "Ram used: %s",    "NULL"},
+	{ battery_perc, "Bat: %s",	  "BAT0"},
+	{ separator," | ",            "NULL"},
+  { ram_used, "Ram used: %s",    "NULL"},
 	{ separator," | ",            "NULL"},
 	{ ram_total, "Total ram: %s",  "NULL"},
 	{ separator," | ",            "NULL"},

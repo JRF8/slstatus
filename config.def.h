@@ -65,13 +65,13 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{ username, "User: %s",	      "NULL"},
+	{ battery_perc, " %s",	  "BAT0"},
 	{ separator," | ",            "NULL"},
-	{ battery_perc, "Bat: %s",	  "BAT0"},
+	//{ vol_perc, " %s", 	"/dev/mixer1"},
+	{run_command, "%s", "$HOME/.config/dwm-scripts/getvol.sh"},
 	{ separator," | ",            "NULL"},
-  { ram_used, "Ram used: %s",    "NULL"},
-	{ separator," | ",            "NULL"},
-	{ ram_total, "Total ram: %s",  "NULL"},
+ 	{ ram_used, "Ram: %s/",    "NULL"},
+	{ ram_total, "%s",  "NULL"},
 	{ separator," | ",            "NULL"},
 	{ datetime, "%s",           "%F %T" },
 	{ separator," | ",            "NULL"},

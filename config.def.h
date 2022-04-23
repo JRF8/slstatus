@@ -65,9 +65,9 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{run_command, "%s", "$HOME/.config/dwm-scripts/getbat.sh"},
+	{run_command, "%s", "/opt/dwm-scripts/getbat.sh"},
 	{ separator," | ",            "NULL"},
-	{run_command, "%s", "$HOME/.config/dwm-scripts/getvol.sh"},
+	{run_command, "%s", "/opt/dwm-scripts/getvol.sh"},
 	{ separator," | ",            "NULL"},
  	{ ram_used, " %s/",    "NULL"},
 	{ ram_total, "%s",  "NULL"},

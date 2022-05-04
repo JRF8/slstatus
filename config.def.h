@@ -72,5 +72,7 @@ static const struct arg args[] = {
  	{ ram_used, " %s/",    "NULL"},
 	{ ram_total, "%s",  "NULL"},
 	{ separator," | ",            "NULL"},
+	{run_command, "%s", "/opt/dwm-scripts/getcputemp.sh"},
+	{ separator," | ",            "NULL"},
 	{ datetime, "%s",           "%F %T" },
 };

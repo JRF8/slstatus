@@ -65,16 +65,12 @@ static const char unknown_str[] = "n/a";
  */
 static const struct arg args[] = {
 	/* function format          argument */
-	{run_command, "%s", "getbat"},
-	{ separator," | ",            "NULL"},
-	{run_command, "%s", "getvol"},
-	{ separator," | ",            "NULL"},
- 	{ ram_used, " %s/",    "NULL"},
-	{ ram_total, "%s",  "NULL"},
-	{ separator," | ",            "NULL"},
-	{run_command, "%s", "getinternet"},
-	{ separator," | ",            "NULL"},
-	{run_command, "%s", "getcputemp"},
-	{ separator," | ",            "NULL"},
+	{run_command, "%s | ", "getbat"},
+	{run_command, "%s | ", "getvol"},
+ 	{ ram_used, "󰍛 %s/",    "NULL"},
+	{ ram_total, "%s | ",  "NULL"},
+	{run_command, "%s | ", "getinternet"},
+        { cpu_freq, "CPU: %sHz @ ", "NULL"},
+	{run_command, "%s | ", "getcputemp"},
 	{ datetime, "%s",           "%F %T" },
 };
